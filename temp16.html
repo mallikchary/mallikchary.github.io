@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            let Name=document.getElementById("name").value
+            let Age=document.getElementById("age").value
+            let Course=document.getElementById("course").value
+            let City=document.getElementById("city").value
+            msg.innerHTML=Name+" | "+Age+" | "+Course+" | "+City
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name"><br>
+    <input type="number" placeholder="Enter Age" id="age"><br>
+    <input type="text" placeholder="Enter course" id="course"><br>
+    <input type="text" placeholder="Enter city" id="city"><br>
+    <button onclick="f()">Submit</button>
+    <div id="msg"></div>
+</body>
+</html>

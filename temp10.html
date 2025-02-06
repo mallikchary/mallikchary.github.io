@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            let scr=document.getElementById("score").value;
+            if(scr>90){
+                msg.innerHTML="Grade A"
+            }else if(scr>70){
+                msg.innerHTML="Grade B"
+            }else if (scr>50) {
+                msg.innerHTML="Grade C"                
+            } else {
+                msg.innerHTML="Grade D"               
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="score" placeholder="Enter Score">
+    <button onclick="f()">submit</button>
+    <hr>
+    <div id="msg"></div>
+</body>
+</html>

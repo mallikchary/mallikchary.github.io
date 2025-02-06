@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cal(){
+        let p=Number(document.getElementById("num1").value)
+        let q=Number(document.getElementById("num2").value)
+        d1.innerHTML="Addition of 2 numbers is:" + (p+q)
+        d2.innerHTML="Subtraction of 2 numbers is:" + (p-q)
+        d3.innerHTML="Multiplication of 2 numbers is:" +p*q
+        d4.innerHTML="division of 2 numbers is:" +p / q
+
+
+        }
+    </script>
+</head>
+<body>
+    <div id="msg"></div>
+    <p><input type="number" placeholder="Enter num1" id="num1" ></p>
+    <p><input type="number" placeholder="Enter num2" id="num2" ></p>
+    <button onclick="cal()">Log in</button>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+</body>
+</html>

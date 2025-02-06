@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            let Email=document.getElementById("email").value
+            let Pass=document.getElementById("pass").value
+            if(Email=="" || Pass==""){
+                msg.innerHTML="Enter Email ID and Password"
+            }else if(Email!="griet123@gmail.com"||Pass!="student"){
+                msg.innerHTML="Access Denied"
+            }else{
+                msg.innerHTML="Welcome"
+            }
+        }
+    </script>
+    <style>
+        .container{
+            text-align:center;
+            display: flex;
+            justify-content:center;
+        }
+        .box{
+            border: 2px solid silver;
+            padding: 20px;
+            width: 400px;
+            border-radius: 20px;
+        }
+        input{
+            padding: 20px;
+            width: 90%;
+        }
+        button{
+            background-color: blue;
+            width: 100%;
+            padding: 20px;
+            border-radius: 20px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+    <form >
+    <div id="msg"></div>
+    <input type="text" placeholder="Enter Email" id="email"/>  
+    <br><br>
+    <input type="password" placeholder="Enter Password" id="pass"/>    
+    <br>
+    <br>
+    <button onclick="f()">Log in</button>
+    </form>
+</body>
+</html>
